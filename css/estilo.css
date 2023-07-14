@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif!important;
     line-height: 1.2;
     letter-spacing: 1.2px;
 }
@@ -13,11 +13,17 @@
     width: 100%;
     margin: 0 auto;
 }
+.ativo{
+    background-color: rgb(91, 91, 158);
+    border-radius: 2px 20px;
+    color: #fff!important;
+}
+
 h2{
     margin-top: 5%;
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(91, 91, 158)
+    color: rgb(91, 91, 158);
 }
 header .topo h1{
     background-image: url(../img/logo.png);
@@ -39,12 +45,22 @@ header .topo .links ul{
     gap: 10px;
 }
 header .topo .links a{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
     font-size: 1.5rem;
+    color: rgb(121, 121, 199);
+}
+header .topo .links a:hover{
+    background-color: rgb(91, 91, 158);
+    border-radius: 2px 20px;
+    color: #fff;
 }
 main .banner{
     background-image: url(/img/capa.png);
     width: 900px;
     height: 414px;
+    border-radius: 10px;
 }
 main .sobre h2{
     margin-top: 5%;
@@ -58,6 +74,7 @@ main .sobre span{
 main .sobre p{
     margin-top: 5%;
     font-size: 1.5rem;
+    text-align: justify;
 }
 footer .rodape{
     margin-top: 5%;
@@ -97,6 +114,7 @@ input{
     padding: 2%;
     border: none;
 }
+
 textarea{
     background-color: rgb(236, 231, 231);
     width: 500px;
